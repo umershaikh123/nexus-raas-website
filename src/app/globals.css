@@ -3,21 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #01080f;
+  --foreground: white;
+  --paragraph: #94a7b5;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --text-gradient-from: white;
+  --topBar: #173c54;
+  --gradient-to: #45abf1;
+  --mobile-menu-bg: #01080f;
+  --nav-link-hover: #77c3f8;
+  --page-border: #0d1820;
+  --scedule-call-from-gradient: #007cce;
+  --scedule-call-to-gradient: #b4f6ff;
+  --scedule-call-hover-from-gradient: #007cce;
+  --scedule-call-hover-to-gradient: white;
+  --workPage-bg: #010305;
+  --loader: #36a1d6;
+  --glow-Effect1: #38598a2c;
+  --glow-Effect2: #38598a11;
+  --line-gradient-from: #141b22;
+  --line-gradient-to: #2776c0;
+  --box-shadow-from: #0f1923;
+  --box-shadow-to: #1b2630;
+  --box-shadow-border: #28333d;
+  --button-primary: #77c3f8;
+  --team-bg-gradient-from: #0b141e;
+  --team-bg-gradient-via: #1b3753;
+  --team-bg-gradient-to: #0b141e;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto;
 }
 
 @layer utilities {
