@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased mx-16`}>
+      <body className={`antialiased md:mx-16`}>
         <ResponsiveAppBar />
         {children}
       </body>
