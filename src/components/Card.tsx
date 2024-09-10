@@ -20,11 +20,11 @@ export const FeatureCard = ({
         <Image src={imageUrl} width={size} height={size} alt="box image" />
       </div>
 
-      <div className="  h-[0.2rem]   min-h-max w-full  max-w-64  bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" />
+      <div className="  h-[0.2rem]    min-h-[0.2rem] w-full  max-w-64  bg-gradient-to-br  from-[var(--line-gradient-from)]   to-[var(--line-gradient-to)]  mb-4  mt-4" />
 
-      <h4 className=" text-center text-2xl mb-2">{title}</h4>
+      <h4 className=" text-center text-xl mb-2">{title}</h4>
 
-      <p className=" text-center text-lg text-gray-500">{description}</p>
+      <p className=" text-center text-base text-gray-500">{description}</p>
     </div>
   )
 }

@@ -4,7 +4,7 @@ const NexusButton = ({
   handleClick,
   text,
 }: {
-  handleClick: () => void
+  handleClick: any
   text: string
 }) => {
   return (

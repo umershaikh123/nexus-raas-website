@@ -6,6 +6,9 @@
   --background: #01080f;
   --foreground: white;
   --paragraph: #94a7b5;
+  --formBG: #0b131b;
+  --formBorder: #4b6173;
+  --formtext: #7d8b94;
 
   --text-gradient-from: white;
   --topBar: #173c54;
