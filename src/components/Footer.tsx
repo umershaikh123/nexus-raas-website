@@ -69,7 +69,7 @@ export default function Footer() {
               <p className=" sm:text-lg text-sm text-gray-400 mb-2">Links</p>
 
               <Link
-                href={"https://docs.nexusnetwork.co.in/"}
+                href={"https://docs.nexusnetwork.live/"}
                 target="_blank"
                 className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
               >
@@ -93,7 +93,7 @@ export default function Footer() {
               </div>
 
               <Link
-                href={"/terms"}
+                href={"/"}
                 target="_blank"
                 className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
               >
@@ -101,7 +101,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href={"/privacy"}
+                href={"/"}
                 target="_blank"
                 className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
               >
