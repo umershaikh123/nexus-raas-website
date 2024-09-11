@@ -3,8 +3,8 @@ import React from "react"
 import { Alert, TextField } from "@mui/material"
 import { styled } from "@mui/material/styles"
 
-const StyledTextField = styled(TextField)(() => ({
-  width: "35rem",
+const StyledTextField = styled(TextField)(({ width }: { width?: string }) => ({
+  width: width || "37vw",
   color: "white",
   marginTop: "20px",
   marginBottom: "20px",
@@ -78,64 +78,69 @@ const Form = () => {
         Lets build your Rollup together
       </h1>
 
-      <form className=" bg-[var(--formBG)] rounded-2xl py-8 px-8 flex flex-col items-center">
-        <StyledTextField
-          name="rollup"
-          type="text"
-          label="What Rollup do you want to use ?"
-          placeholder="Arbitrum ..."
-          value={form.rollup}
-          onChange={handleChange}
-          variant="outlined"
-          fullWidth
-        />
+      <form className=" bg-[var(--formBG)] rounded-2xl py-8 px-8 flex flex-col   items-center">
+        <div className="flex   space-x-6">
+          <StyledTextField
+            name="rollup"
+            type="text"
+            label="What Rollup do you want to use ?"
+            placeholder="Arbitrum ..."
+            value={form.rollup}
+            onChange={handleChange}
+            variant="outlined"
+            fullWidth
+          />
 
-        <StyledTextField
-          name="description"
-          type="text"
-          label="Describe your project at a high-level"
-          multiline
-          placeholder="Arbitrum ..."
-          value={form.description}
-          onChange={handleChange}
-          minRows={4}
-          variant="outlined"
-          fullWidth
-        />
+          <StyledTextField
+            name="email"
+            type="text"
+            label="Your Email"
+            placeholder="Arbitrum ..."
+            value={form.email}
+            onChange={handleChange}
+            variant="outlined"
+            fullWidth
+          />
+        </div>
 
-        <StyledTextField
-          name="timeline"
-          type="text"
-          label="What is your timeline for mainnet deployment?"
-          multiline
-          placeholder="Arbitrum ..."
-          value={form.timeline}
-          onChange={handleChange}
-          variant="outlined"
-          fullWidth
-        />
+        <div className="flex  space-x-6">
+          <StyledTextField
+            name="timeline"
+            type="text"
+            label="What is your timeline for mainnet deployment?"
+            multiline
+            placeholder="Arbitrum ..."
+            value={form.timeline}
+            onChange={handleChange}
+            variant="outlined"
+            fullWidth
+          />
 
-        <StyledTextField
-          name="telegram"
-          type="text"
-          label="Telegram handle"
-          placeholder="Arbitrum ..."
-          value={form.telegram}
-          onChange={handleChange}
-          variant="outlined"
-          fullWidth
-        />
-
-        <StyledTextField
-          name="email"
-          type="text"
-          label="Your Email"
-          placeholder="Arbitrum ..."
-          value={form.email}
-          onChange={handleChange}
-          variant="outlined"
-          fullWidth
-        />
+          <StyledTextField
+            name="telegram"
+            type="text"
+            label="Telegram handle"
+            placeholder="Arbitrum ..."
+            value={form.telegram}
+            onChange={handleChange}
+            variant="outlined"
+            fullWidth
+          />
+        </div>
+        <div>
+          <StyledTextField
+            width="75vw"
+            name="description"
+            type="text"
+            label="Describe your project at a high-level"
+            multiline
+            placeholder="Arbitrum ..."
+            value={form.description}
+            onChange={handleChange}
+            variant="outlined"
+            fullWidth
+          />
+        </div>
         <NexusButton text="Submit" handleClick={handleSubmit} />
       </form>
     </div>

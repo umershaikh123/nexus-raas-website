@@ -25,36 +25,26 @@ const WhyUs = () => {
         in a secure and non-custodial way
       </p>
 
-      <div className="flex flex-wrap  lg:max-w-[70vw] w-full  h-full justify-evenly items-center  ">
+      <div className="flex min-[1380px]:flex-row  flex-col  w-full max-w-[100rem]  h-full justify-evenly items-center  ">
         <FeatureCard
-          title="Personalized Experience"
-          description="We provide a personalized experience to our clients"
+          title="Quick Launch "
+          description="Setup the rollup to start building and scaling without delays "
           imageUrl={d1}
           size={250}
         />
 
         <FeatureCard
-          title="Customization"
-          description="We provide tailored customization of
-rollups according to our clients"
+          title="Built to your needs "
+          description="Customize your rollup to align with your goals"
           imageUrl={d5}
           size={150}
         />
 
         <FeatureCard
-          title="Expertise"
-          description="We have been building Rollups for
-years"
+          title="Personalized support "
+          description="Dedicated assistance for any challenges with our personalized support"
           imageUrl={d2}
           size={250}
-        />
-
-        <FeatureCard
-          title="Security"
-          description="we provide the best security and
-optimal performance"
-          imageUrl={d3}
-          size={220}
         />
       </div>
     </div>
