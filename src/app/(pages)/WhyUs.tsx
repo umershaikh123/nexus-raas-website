@@ -25,7 +25,7 @@ const WhyUs = () => {
         in a secure and non-custodial way
       </p>
 
-      <div className="flex flex-wrap  lg:max-w-[50vw] w-full  h-full justify-evenly items-center  ">
+      <div className="flex flex-wrap  lg:max-w-[70vw] w-full  h-full justify-evenly items-center  ">
         <FeatureCard
           title="Personalized Experience"
           description="We provide a personalized experience to our clients"
