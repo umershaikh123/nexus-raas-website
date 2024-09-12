@@ -1,10 +1,8 @@
 import React from "react"
 import Image from "next/image"
-import coin from "/public/Images/Funders/coin_T.png"
-import founder from "/public/Images/Funders/founderHeads.png"
-import hash from "/public/Images/Funders/hashWhite.png"
-import mask from "/public/Images/Funders/Mask_T.png"
-import orbit from "/public/Images/Funders/orbit_T.png"
+import biconomy from "/public/Images/icons/Biconomy white Horizontal Lockup.png"
+import blockscout from "/public/Images/icons/blockscout.png"
+import layeredge from "/public/Images/icons/layeredge.svg"
 
 const PartnerPage = () => {
   return (
@@ -20,12 +18,28 @@ const PartnerPage = () => {
           Integration partners
         </h1>
 
-        <div className="flex lg:space-x-16 space-x-4 justify-center items-center mt-[6rem]">
-          <Image src={mask} width={100} height={100} alt="" />
-          <Image src={coin} width={100} height={100} alt="" />
-          <Image src={hash} width={100} height={100} alt="" />
-          <Image src={founder} width={100} height={100} alt="" />
-          <Image src={orbit} width={100} height={100} alt="" />
+        <div className="flex  lg:flex-row flex-col  lg:space-y-0 space-y-8   justify-center lg:items-center items-start  ">
+          <Image
+            src={layeredge}
+            width={300}
+            height={300}
+            alt=""
+            className=" "
+          />
+          <Image
+            src={biconomy}
+            width={300}
+            height={300}
+            alt=""
+            className=" mr-6"
+          />
+          <Image
+            src={blockscout}
+            width={300}
+            height={300}
+            alt=""
+            className=""
+          />
         </div>
       </div>
     </div>
