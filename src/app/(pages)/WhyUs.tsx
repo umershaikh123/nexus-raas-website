@@ -8,8 +8,8 @@ import d5 from "/public/Images/FeaturesPage/d5.svg"
 
 const WhyUs = () => {
   return (
-    <div className="border min-h-[90vh] py-16  h-full flex flex-col justify-evenly items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative">
-      <div className="absolute top-[60%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[35%] h-[70%] bg-[#0e223faf]  rounded-full blur-[6rem]  -z-20 " />
+    <div className="border   py-24  h-full flex flex-col justify-evenly items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative">
+      <div className="absolute top-[60%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[10%] h-[40%] bg-[#0e223faf]  rounded-full blur-[6rem]  -z-20 " />
 
       <h1
         className="lg:text-5xl text-4xl font-bold bg-clip-text backdrop-blur py-4 text-transparent text-center "
@@ -21,8 +21,8 @@ const WhyUs = () => {
         Why Us
       </h1>
       <p className=" text-[var(--paragraph)] lg:text-xl   max-w-[50rem] text-center mb-12 mt-4">
-        Rollups can integrate with Nexus Network within minutes to earn yields
-        in a secure and non-custodial way
+        Quick customised rollup deployment and expert support every step of the
+        way
       </p>
 
       <div className="flex min-[1380px]:flex-row  flex-col  w-full max-w-[100rem]  h-full justify-evenly items-center  ">

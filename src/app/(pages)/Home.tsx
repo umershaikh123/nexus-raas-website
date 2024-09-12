@@ -1,13 +1,6 @@
-"use client"
 import React from "react"
 import NexusButton from "@/components/Button"
 import Image from "next/image"
-import coin from "/public/Images/Funders/coin_T.png"
-import founder from "/public/Images/Funders/founderHeads.png"
-import hash from "/public/Images/Funders/hashWhite.png"
-import mask from "/public/Images/Funders/Mask_T.png"
-import orbit from "/public/Images/Funders/orbit_T.png"
-
 import arbitrumLogo from "/public/Images/icons/arbitrum.png"
 import optimismLogo from "/public/Images/icons/optimism.png"
 import zkLogo from "/public/Images/icons/zksync.svg"

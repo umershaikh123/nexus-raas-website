@@ -1,6 +1,6 @@
 import React from "react"
 
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 export const FeatureCard = ({
   imageUrl,
   title,
@@ -25,6 +25,45 @@ export const FeatureCard = ({
       <h4 className=" text-center text-xl mb-2">{title}</h4>
 
       <p className=" text-center text-base text-gray-500">{description}</p>
+    </div>
+  )
+}
+export const BuildCard = ({
+  title,
+  image1,
+  image2,
+  image3,
+  size1 = 200,
+  size2 = 200,
+  size3 = 170,
+}: {
+  title: string
+  image1: StaticImageData
+  image2: StaticImageData
+  image3: StaticImageData
+  size1?: number
+  size2?: number
+  size3?: number
+}) => {
+  return (
+    <div className="flex border w-fit h-full rounded-2xl border-[var(--build-border)] items-center justify-center">
+      <div className="flex flex-col px-12 py-10 items-center justify-center">
+        <h1 className="text-3xl font-semibold mb-7">{title}</h1>
+
+        <div className="flex flex-col  space-y-8 items-center">
+          <div className=" border border-[var(--formBorder)] px-8 py-2 w-[17rem] h-[6rem] rounded-2xl flex items-center justify-center">
+            <Image src={image1} width={size1} height={size1} alt="logo" />
+          </div>
+
+          <div className=" border border-[var(--formBorder)] px-8 py-2 w-[17rem] h-[6rem] rounded-2xl flex items-center justify-center">
+            <Image src={image2} width={size2} height={size2} alt="logo" />
+          </div>
+
+          <div className=" border border-[var(--formBorder)] px-8 py-2  w-[17rem] h-[6rem] rounded-2xl flex items-center justify-center">
+            <Image src={image3} width={size3} height={size3} alt="logo" />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

@@ -6,9 +6,13 @@
   --background: #01080f;
   --foreground: white;
   --paragraph: #94a7b5;
+  --build-border: #0095ff;
   --formBG: #0b131b;
   --formBorder: #4b6173;
   --formtext: #7d8b94;
+
+  --build-from: #0093fc;
+  --build-to: #00243e;
 
   --text-gradient-from: white;
   --topBar: #173c54;

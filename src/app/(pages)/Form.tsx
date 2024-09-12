@@ -66,7 +66,7 @@ const Form = () => {
 
   return (
     <div className="border min-h-[90vh] py-16  h-full flex flex-col justify-evenly items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative">
-      <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[35%] h-[70%] bg-[#0e223faf]  rounded-full blur-[6rem]  -z-20 " />
+      <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[25%] h-[50%] bg-[#0e223faf]  rounded-full blur-[6rem]  -z-20 " />
 
       <h1
         className="lg:text-5xl text-4xl font-bold bg-clip-text backdrop-blur py-4 text-transparent text-center  mb-8"
@@ -95,7 +95,7 @@ const Form = () => {
             name="email"
             type="text"
             label="Your Email"
-            placeholder="Arbitrum ..."
+            placeholder="Enter your email ..."
             value={form.email}
             onChange={handleChange}
             variant="outlined"
@@ -109,7 +109,7 @@ const Form = () => {
             type="text"
             label="What is your timeline for mainnet deployment?"
             multiline
-            placeholder="Arbitrum ..."
+            placeholder="Enter your timeline ..."
             value={form.timeline}
             onChange={handleChange}
             variant="outlined"
@@ -120,7 +120,7 @@ const Form = () => {
             name="telegram"
             type="text"
             label="Telegram handle"
-            placeholder="Arbitrum ..."
+            placeholder="@user ..."
             value={form.telegram}
             onChange={handleChange}
             variant="outlined"
@@ -134,11 +134,12 @@ const Form = () => {
             type="text"
             label="Describe your project at a high-level"
             multiline
-            placeholder="Arbitrum ..."
+            placeholder="description of the project ..."
             value={form.description}
             onChange={handleChange}
             variant="outlined"
             fullWidth
+            minRows={6}
           />
         </div>
         <NexusButton text="Submit" handleClick={handleSubmit} />
