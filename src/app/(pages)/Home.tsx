@@ -7,7 +7,10 @@ import zkLogo from "/public/Images/icons/zksync.svg"
 import { Fade } from "react-awesome-reveal"
 const HomePage = () => {
   return (
-    <div className="border min-h-[87vh]  h-full flex flex-col justify-center items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative">
+    <div
+      className="border min-h-[87vh]  h-full flex flex-col justify-center items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative"
+      id="HomePage"
+    >
       <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[25%] h-[70%] bg-[#0e223faf]  rounded-full blur-[6rem]  -z-20 " />
       <Fade cascade duration={300} triggerOnce={true}>
         <h1

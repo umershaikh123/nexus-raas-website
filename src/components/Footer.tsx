@@ -11,7 +11,7 @@ export default function Footer() {
     <Fade cascade duration={300} triggerOnce={true} delay={1000}>
       <div
         className={`justify-center items-center flex  z-10     md:px-16 px-0  mx-auto   `}
-        id="Footer"
+        id="footer"
       >
         <div
           className="h-full   w-full lg:p-16 py-24 flex    items-center   relative       "

@@ -7,7 +7,10 @@ import { Fade } from "react-awesome-reveal"
 
 const WhyUs = () => {
   return (
-    <div className="border   py-24  h-full flex flex-col justify-evenly items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative">
+    <div
+      className="border   py-24  h-full flex flex-col justify-evenly items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative"
+      id="whyus"
+    >
       <Fade cascade duration={300} triggerOnce={true} delay={1000}>
         <div className="absolute top-[60%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[10%] h-[40%] bg-[#0e223faf]  rounded-full blur-[6rem]  -z-20 " />
         <h1

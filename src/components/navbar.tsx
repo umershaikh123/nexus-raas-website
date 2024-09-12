@@ -115,7 +115,7 @@ function ResponsiveAppBar() {
                   </MenuItem>
                 </Link>
                 <Link
-                  to="WorkPage"
+                  to="whyus"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -163,7 +163,7 @@ function ResponsiveAppBar() {
                 </a>
 
                 <Link
-                  to="Footer"
+                  to="footer"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -225,7 +225,7 @@ function ResponsiveAppBar() {
 
               <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out">
                 <Link
-                  to="WorkPage"
+                  to="whyus"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -243,7 +243,7 @@ function ResponsiveAppBar() {
 
               <button className="my-2 mx-5 capitalize  font-normal  block   hover:text-[var(--nav-link-hover)]  duration-300  transition-all  ease-in-out">
                 <Link
-                  to="Footer"
+                  to="footer"
                   spy={true}
                   smooth={true}
                   offset={50}
