@@ -1,5 +1,5 @@
 import { Heading } from "@/components/Heading"
-import NexusButton from "@/components/Button"
+import { FormButton, NexusButton } from "@/components/Button"
 import React from "react"
 import { Alert, TextField } from "@mui/material"
 import { styled } from "@mui/material/styles"
@@ -57,12 +57,45 @@ const Form = () => {
     }))
   }
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
+
     const { rollup, description, telegram, timeline, email } = form
+    console.log("client logs", {
+      rollup,
+      description,
+      telegram,
+      timeline,
+      email,
+    })
     if (!timeline || !description || !telegram || !email || !rollup) {
-      window.alert("please fill all fields")
+      window.alert("Please fill all fields")
       return
+    }
+
+    try {
+      const response = await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          rollup,
+          description,
+          telegram,
+          timeline,
+          email,
+        }),
+      })
+
+      if (response.ok) {
+        window.alert("Email sent successfully!")
+      } else {
+        window.alert("Failed to send email.")
+      }
+    } catch (error) {
+      console.error("Error sending email:", error)
+      window.alert("Error sending email.")
     }
   }
 
@@ -72,7 +105,10 @@ const Form = () => {
       <Fade cascade duration={300} triggerOnce={true} delay={1000}>
         <Heading text=" Lets build your Rollup together" />
 
-        <form className=" bg-[var(--formBG)] rounded-2xl py-8 px-8 flex flex-col   items-center">
+        <form
+          className=" bg-[var(--formBG)] rounded-2xl py-8 px-8 flex flex-col   items-center"
+          onSubmit={handleSubmit}
+        >
           <div className="flex   space-x-6">
             <StyledTextField
               name="rollup"
@@ -82,7 +118,6 @@ const Form = () => {
               value={form.rollup}
               onChange={handleChange}
               variant="outlined"
-              required
               fullWidth
             />
 
@@ -90,7 +125,6 @@ const Form = () => {
               name="email"
               type="text"
               label="Your Email"
-              required
               placeholder="Enter your email ..."
               value={form.email}
               onChange={handleChange}
@@ -108,7 +142,6 @@ const Form = () => {
               placeholder="Enter your timeline ..."
               value={form.timeline}
               onChange={handleChange}
-              required
               variant="outlined"
               fullWidth
             />
@@ -131,7 +164,6 @@ const Form = () => {
               type="text"
               label="Describe your project at a high-level"
               multiline
-              required
               placeholder="description of the project ..."
               value={form.description}
               onChange={handleChange}
@@ -140,7 +172,7 @@ const Form = () => {
               minRows={6}
             />
           </div>
-          <NexusButton text="Submit" handleClick={handleSubmit} />
+          <FormButton text="Submit" handleClick={handleSubmit} />
         </form>
       </Fade>
     </div>

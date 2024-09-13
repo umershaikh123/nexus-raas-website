@@ -1,5 +1,5 @@
 import React from "react"
-import NexusButton from "@/components/Button"
+import { NexusButton } from "@/components/Button"
 import Image from "next/image"
 import arbitrumLogo from "/public/Images/icons/arbitrum.png"
 import optimismLogo from "/public/Images/icons/optimism.png"

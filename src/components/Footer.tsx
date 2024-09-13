@@ -99,7 +99,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href={"https://www.nexusnetwork.live/"}
+                  href={"https://www.nexusnetwork.live/raas/sla"}
                   target="_blank"
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
