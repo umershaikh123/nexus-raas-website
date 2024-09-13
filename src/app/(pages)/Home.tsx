@@ -5,6 +5,8 @@ import arbitrumLogo from "/public/Images/icons/arbitrum.png"
 import optimismLogo from "/public/Images/icons/optimism.png"
 import zkLogo from "/public/Images/icons/zksync.svg"
 import { Fade } from "react-awesome-reveal"
+import { openCalendly } from "@/utils"
+
 const HomePage = () => {
   return (
     <div
@@ -50,7 +52,7 @@ const HomePage = () => {
           />
         </div>
 
-        <NexusButton handleClick={() => {}} text={"Schedule Call"} />
+        <NexusButton handleClick={openCalendly} text={"Schedule Call"} />
       </Fade>
     </div>
   )

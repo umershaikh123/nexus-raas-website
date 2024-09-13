@@ -10,21 +10,14 @@ import btc from "/public/Images/icons/btc.svg"
 import rtoken from "/public/Images/icons/rtoken.svg"
 import { Fade } from "react-awesome-reveal"
 import { BuildCard } from "@/components/Card"
+import { Heading } from "@/components/Heading"
 
 const BuildPage = () => {
   return (
     <div className="border w-full py-16  h-full flex flex-col justify-evenly items-center  border-x-2  border-t-2   border-[var(--page-border)]  relative">
       <div className="flex flex-col  items-center space-y-4 ">
         <Fade cascade duration={300} triggerOnce={true} delay={1000}>
-          <h1
-            className="lg:text-5xl text-4xl font-bold bg-clip-text backdrop-blur py-4 text-transparent text-center  mb-8"
-            style={{
-              backgroundImage:
-                "linear-gradient(to bottom, white 44%, #0095FF 100%)",
-            }}
-          >
-            Build the rollup you want
-          </h1>
+          <Heading text="Build the rollup you want" />
 
           <div className="flex  min-[1400px]:flex-row flex-col items-center justify-between   ">
             <BuildCard

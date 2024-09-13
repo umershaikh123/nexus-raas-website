@@ -3,8 +3,8 @@ import logo from "/public/Images/logo.png"
 import Image from "next/image"
 import Link from "next/link"
 
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 import { Fade } from "react-awesome-reveal"
+import { openCalendly } from "@/utils"
 
 export default function Footer() {
   return (
@@ -13,10 +13,7 @@ export default function Footer() {
         className={`justify-center items-center flex  z-10     md:px-16 px-0  mx-auto   `}
         id="footer"
       >
-        <div
-          className="h-full   w-full lg:p-16 py-24 flex    items-center   relative       "
-          id="FooterM"
-        >
+        <div className="h-full   w-full lg:p-16 py-24 flex    items-center   relative       ">
           <div className=" w-full    px-8 flex md:flex-row flex-col justify-center">
             <div className="  w-full justify-center flex" id="c1">
               <div className="flex flex-col space-y-4">
@@ -59,7 +56,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href={"https://discord.gg/wnTfyh6T"}
+                  href={"https://discord.com/invite/Qb8zu5sDkj"}
                   target="_blank"
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
@@ -78,24 +75,15 @@ export default function Footer() {
                   Documentation
                 </Link>
 
-                <div className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out">
-                  <ScrollLink
-                    to="DemoPage"
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                  >
-                    Demo
-                  </ScrollLink>
-                </div>
-
-                <div className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out">
+                <div
+                  onClick={openCalendly}
+                  className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+                >
                   Schedule Call
                 </div>
 
                 <Link
-                  href={"/"}
+                  href={"https://www.nexusnetwork.live/terms"}
                   target="_blank"
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
@@ -103,11 +91,19 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href={"/"}
+                  href={"https://www.nexusnetwork.live/privacy"}
                   target="_blank"
                   className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
                 >
                   Privacy policy
+                </Link>
+
+                <Link
+                  href={"https://www.nexusnetwork.live/"}
+                  target="_blank"
+                  className="sm:text-base text-sm mb-2 hover:text-[var(--button-primary)] duration-300  transition-all  ease-in-out"
+                >
+                  SLA
                 </Link>
               </div>
             </div>

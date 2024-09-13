@@ -4,6 +4,7 @@ import d1 from "/public/Images/FeaturesPage/d1.svg"
 import d2 from "/public/Images/FeaturesPage/d2.svg"
 import d5 from "/public/Images/FeaturesPage/d5.svg"
 import { Fade } from "react-awesome-reveal"
+import { Heading } from "@/components/Heading"
 
 const WhyUs = () => {
   return (
@@ -13,15 +14,8 @@ const WhyUs = () => {
     >
       <Fade cascade duration={300} triggerOnce={true} delay={1000}>
         <div className="absolute top-[60%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-[10%] h-[40%] bg-[#0e223faf]  rounded-full blur-[6rem]  -z-20 " />
-        <h1
-          className="lg:text-5xl text-4xl font-bold bg-clip-text backdrop-blur py-4 text-transparent text-center "
-          style={{
-            backgroundImage:
-              "linear-gradient(to bottom, white 44%, #0095FF 100%)",
-          }}
-        >
-          Why Us
-        </h1>
+
+        <Heading text="Why Us" />
         <p className=" text-[var(--paragraph)] lg:text-xl   max-w-[50rem] text-center mb-12 mt-4">
           Quick customised rollup deployment and expert support every step of
           the way
